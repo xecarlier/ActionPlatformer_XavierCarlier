@@ -204,4 +204,8 @@ public class MainCharacter : MonoBehaviour
     {
         Gizmos.DrawSphere(puntoAtaque.position, radioAtaque);
     }
+
+    void OnDestroy() {
+        GameManager.Instace.ChangeScene("SampleScene");
+    }
 }
